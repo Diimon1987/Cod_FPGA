@@ -1,38 +1,31 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <!-- Мета-теги для корректного отображения и SEO -->
     <meta charset="UTF-8">
-    <!-- Адаптивная настройка под мобильные устройства -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Краткое описание сайта для поисковых систем -->
     <meta name="description" content="Портфолио начинающего C++ разработчика. Консольные приложения, ПЛИС, автоматизация.">
     <meta name="author" content="Дмитрий">
+    <!-- Для корректного отображения при открытии ссылки из Telegram -->
+    <meta name="telegram:channel" content="@username">
     <title>Коды ПЛИС — Портфолио C++ разработчика</title>
 
-    <!-- Подключение иконки сайта (favicon) в формате SVG -->
-    <!-- Это стилизованная буква "C" с плюсом внутри -->
+    <!-- Favicon (SVG) -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%232c3e50'/%3E%3Ctext x='50%25' y='58%25' text-anchor='middle' font-family='Arial, sans-serif' font-size='38' font-weight='bold' fill='%23f4f1ea'%3EC%2B%3C/text%3E%3C/svg%3E">
 
-    <!-- Подключение таблицы стилей -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- ================= ШАПКА САЙТА ================= -->
-    <!-- <header> используется для основной шапки страницы -->
+    <!-- ШАПКА -->
     <header class="site-header">
         <div class="container header-container">
-            <!-- Логотип: SVG-шестерёнка + название -->
             <a href="#home" class="logo">
-                <!-- Минималистичная SVG-иконка шестерёнки -->
                 <svg class="logo-icon" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
                     <path fill="currentColor" d="M19.14 12.94c.04-.31.06-.63.06-.94 0-.31-.02-.63-.06-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.56-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.49-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/>
                 </svg>
                 <span class="logo-text">Коды ПЛИС</span>
             </a>
 
-            <!-- Навигационное меню -->
             <nav class="main-nav" aria-label="Главная навигация">
                 <ul>
                     <li><a href="#home">Главная</a></li>
@@ -42,17 +35,14 @@
                 </ul>
             </nav>
 
-            <!-- Кнопка мобильного меню (гамбургер) -->
             <button class="menu-toggle" aria-label="Открыть меню">
                 <span></span><span></span><span></span>
             </button>
         </div>
     </header>
 
-    <!-- ================= ОСНОВНОЙ КОНТЕНТ ================= -->
     <main>
-
-        <!-- === Секция: Главная (Hero) === -->
+        <!-- HERO -->
         <section id="home" class="hero">
             <div class="container hero-content">
                 <h1 class="hero-title">Привет! Я <span class="accent">Дмитрий</span></h1>
@@ -60,17 +50,15 @@
                     Изучаю возможности <strong>C++</strong> по управлению логикой <strong>ПЛИС</strong>.
                     Создаю простые консольные приложения по управлению автоматизацией.
                 </p>
-                <!-- Кнопка-призыв к действию -->
                 <a href="#projects" class="btn btn-primary">Посмотреть мои проекты</a>
             </div>
         </section>
 
-        <!-- === Секция: О себе === -->
+        <!-- О СЕБЕ -->
         <section id="about" class="section">
             <div class="container">
                 <h2 class="section-title">О себе</h2>
                 <div class="about-grid">
-                    <!-- Блок с образованием -->
                     <div class="about-card">
                         <h3>🎓 Образование</h3>
                         <p>
@@ -79,7 +67,6 @@
                             Год окончания: <span class="accent">2010</span>
                         </p>
                     </div>
-                    <!-- Блок с изученными темами -->
                     <div class="about-card">
                         <h3>💻 Ключевые навыки</h3>
                         <ul class="skills-list">
@@ -95,12 +82,11 @@
             </div>
         </section>
 
-        <!-- === Секция: Проекты === -->
+        <!-- ПРОЕКТЫ -->
         <section id="projects" class="section section-alt">
             <div class="container">
                 <h2 class="section-title">Проекты</h2>
                 <div class="projects-grid">
-                    <!-- Проект 1: Калькулятор -->
                     <article class="project-card">
                         <div class="project-icon">🧮</div>
                         <h3>Консольный калькулятор</h3>
@@ -109,20 +95,18 @@
                         <a href="https://github.com/username/cpp-calculator" target="_blank" rel="noopener" class="project-link">📂 Исходный код на GitHub</a>
                     </article>
 
-                    <!-- Проект 2: Генератор случайных чисел -->
                     <article class="project-card">
                         <div class="project-icon">🎲</div>
                         <h3>Генератор случайных чисел</h3>
-                        <p class="project-goal"><strong>Цель:</strong> Сгенерировать массив случайных чисел в заданном диапазоне и вывести статистику (минимум, максимум, среднее).</p>
+                        <p class="project-goal"><strong>Цель:</strong> Сгенерировать массив случайных чисел в заданном диапазоне и вывести статистику.</p>
                         <p class="project-tech"><strong>Технологии:</strong> C++, cstdlib, ctime, массивы, циклы, функции.</p>
                         <a href="https://github.com/username/cpp-random-gen" target="_blank" rel="noopener" class="project-link">📂 Исходный код на GitHub</a>
                     </article>
 
-                    <!-- Проект 3: Сортировка массива -->
                     <article class="project-card">
                         <div class="project-icon">📊</div>
                         <h3>Сортировка массива</h3>
-                        <p class="project-goal"><strong>Цель:</strong> Реализовать несколько алгоритмов сортировки (пузырьком, выбором, вставками) и сравнить их производительность.</p>
+                        <p class="project-goal"><strong>Цель:</strong> Реализовать несколько алгоритмов сортировки и сравнить их производительность.</p>
                         <p class="project-tech"><strong>Технологии:</strong> C++, алгоритмы сортировки, массивы, функции, замеры времени.</p>
                         <a href="https://github.com/username/cpp-sorting" target="_blank" rel="noopener" class="project-link">📂 Исходный код на GitHub</a>
                     </article>
@@ -130,7 +114,7 @@
             </div>
         </section>
 
-        <!-- === Секция: Контакты === -->
+        <!-- КОНТАКТЫ -->
         <section id="contacts" class="section">
             <div class="container">
                 <h2 class="section-title">Контакты</h2>
@@ -171,14 +155,12 @@
                 </div>
             </div>
         </section>
-
     </main>
 
-    <!-- ================= ФУТЕР ================= -->
+    <!-- ФУТЕР -->
     <footer class="site-footer">
         <div class="container footer-content">
             <div class="footer-left">
-                <!-- SVG-иконка C++ -->
                 <svg class="cpp-icon" viewBox="0 0 64 64" width="32" height="32" aria-hidden="true">
                     <circle cx="32" cy="32" r="30" fill="currentColor"/>
                     <text x="50%" y="58%" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="bold" fill="#2c3e50">C+</text>
@@ -189,7 +171,6 @@
         </div>
     </footer>
 
-    <!-- Подключение скрипта (с атрибутом defer для загрузки после HTML) -->
     <script src="script.js" defer></script>
 </body>
 </html>
